@@ -1,0 +1,2 @@
+Arrays, when declared inside int main() contain garbage values and the maximum size is limited to around 10^6
+Arrays, when declared outside int main() contain values initialized to 0 and the maximum size is limited to around 10^7
