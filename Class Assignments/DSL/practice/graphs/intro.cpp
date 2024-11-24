@@ -58,6 +58,18 @@ void printAdjMatrix(int adj[][V]){
         }
     }
 
+void dfs(int adj[][V], int v, int s){
+    bool visited[V] = {false};
+    visited[s] = true;
+
+    cout << s << " ";
+
+    for(int i = 0; i<V; i++){
+        if(adj[s][i] != 0 && !visited[i] ){
+            dfs(adj, v, i);
+        }
+    }
+}
 
 int minKey(int key[], bool mstSet[]){
     int min = INT_MAX, minIndex;
